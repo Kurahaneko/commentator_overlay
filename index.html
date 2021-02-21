@@ -1,0 +1,372 @@
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+        <script src="./commentator_backend.js"></script>
+
+        <style>
+            .wholebody{
+                width: 90%;
+                margin: auto;
+            }
+            .header{
+                background-color: lightgray;
+                padding-left: 30px;
+                font-size: 30px;
+                height: 50px;
+                line-height: 50px;
+            }
+            .button_background{
+                background-color: #ffdf00;
+            }
+            .header-1{
+                text-align: center;
+                background-color: lightblue;
+                margin-left: 5%;
+                margin-right: 2.5%;
+            }
+            .header-2{
+                text-align: center;
+                background-color: lightcoral;
+                margin-left: 2.5%;
+                margin-right: 5%;
+            }
+            .side-1{
+                margin-left: 5%;
+                margin-right: 2.5%;
+            }
+            .side-2{
+                margin-left: 5%;
+                margin-right: 2.5%;
+            }
+            .submit{
+                margin-left: 5%;
+                margin-right: 2.5%;
+                display:inline;
+            }
+            #agentinput1-1{
+                padding-right: 1%;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <div class="wholebody">
+            <div class="header">
+                Commentator Overlay
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="header-1" id="defenders_name">
+                        <div>
+                            <span id="d_name">Defenders</span>
+                        </div>
+                        <br>
+                        <div id="defenders1">
+                            <input id="defenders" type="text" placeholder="Defenders">
+                        </div>
+                        <br>
+                    </div>
+
+                    <div class="side-1">
+                        <br>
+                        <div id="first_agent">
+                            <label for="agent1-1">Agent 1:</label>
+                            <select id="agent1-1" name="agent1-1">
+                                <option value="Breach">Breach</option>
+                                <option value="Brimstone">Brimstone</option>
+                                <option value="Cypher">Cypher</option>
+                                <option value="Jett">Jett</option>
+                                <option value="Killjoy">Killjoy</option>
+                                <option value="Omen">Omen</option>
+                                <option value="Phoenix">Phoenix</option>
+                                <option value="Raze">Raze</option>
+                                <option value="Reyna">Reyna</option>
+                                <option value="Sage">Sage</option>
+                                <option value="Skye">Skye</option>
+                                <option value="Sova">Sova</option>
+                                <option value="Viper">Viper</option>
+                                <option value="Yoru">Yoru</option>
+                            </select>
+                            &nbsp;
+                            &nbsp;
+
+                            <input id="agentname1-1" type="text" placeholder="Defender1">
+                        </div>
+
+                        <br>
+
+                        <div id="second_agent">
+                            <label for="agent1-2">Agent 2:</label>
+                            <select id="agent1-2" name="agent1-2">
+                                <option value="Breach">Breach</option>
+                                <option value="Brimstone">Brimstone</option>
+                                <option value="Cypher">Cypher</option>
+                                <option value="Jett">Jett</option>
+                                <option value="Killjoy">Killjoy</option>
+                                <option value="Omen">Omen</option>
+                                <option value="Phoenix">Phoenix</option>
+                                <option value="Raze">Raze</option>
+                                <option value="Reyna">Reyna</option>
+                                <option value="Sage">Sage</option>
+                                <option value="Skye">Skye</option>
+                                <option value="Sova">Sova</option>
+                                <option value="Viper">Viper</option>
+                                <option value="Yoru">Yoru</option>
+                            </select>
+                            &nbsp;
+                            &nbsp;
+
+                            <input id="agentname1-2" type="text" placeholder="Defender2">
+                        </div>
+
+                        <br>
+
+                        <div id="third_agent">
+                            <label for="agent1-3">Agent 3:</label>
+                            <select id="agent1-3" name="agent1-3">
+                                <option value="Breach">Breach</option>
+                                <option value="Brimstone">Brimstone</option>
+                                <option value="Cypher">Cypher</option>
+                                <option value="Jett">Jett</option>
+                                <option value="Killjoy">Killjoy</option>
+                                <option value="Omen">Omen</option>
+                                <option value="Phoenix">Phoenix</option>
+                                <option value="Raze">Raze</option>
+                                <option value="Reyna">Reyna</option>
+                                <option value="Sage">Sage</option>
+                                <option value="Skye">Skye</option>
+                                <option value="Sova">Sova</option>
+                                <option value="Viper">Viper</option>
+                                <option value="Yoru">Yoru</option>
+                            </select>
+                            &nbsp;
+                            &nbsp;
+
+                            <input id="agentname1-3" type="text" placeholder="Defender3">
+                        </div>
+
+                        <br>
+
+                        <div id="fourth_agent">
+                            <label for="agent1-4">Agent 4:</label>
+                            <select id="agent1-4" name="agent1-4">
+                                <option value="Breach">Breach</option>
+                                <option value="Brimstone">Brimstone</option>
+                                <option value="Cypher">Cypher</option>
+                                <option value="Jett">Jett</option>
+                                <option value="Killjoy">Killjoy</option>
+                                <option value="Omen">Omen</option>
+                                <option value="Phoenix">Phoenix</option>
+                                <option value="Raze">Raze</option>
+                                <option value="Reyna">Reyna</option>
+                                <option value="Sage">Sage</option>
+                                <option value="Skye">Skye</option>
+                                <option value="Sova">Sova</option>
+                                <option value="Viper">Viper</option>
+                                <option value="Yoru">Yoru</option>
+                            </select>
+                            &nbsp;
+                            &nbsp;
+
+                            <input id="agentname1-4" type="text" placeholder="Defender4">
+                        </div>
+
+                        <br>
+
+                        <div id="fifth_agent">
+                            <label for="agent1-5">Agent 5:</label>
+                            <select id="agent1-5" name="agent1-5">
+                                <option value="Breach">Breach</option>
+                                <option value="Brimstone">Brimstone</option>
+                                <option value="Cypher">Cypher</option>
+                                <option value="Jett">Jett</option>
+                                <option value="Killjoy">Killjoy</option>
+                                <option value="Omen">Omen</option>
+                                <option value="Phoenix">Phoenix</option>
+                                <option value="Raze">Raze</option>
+                                <option value="Reyna">Reyna</option>
+                                <option value="Sage">Sage</option>
+                                <option value="Skye">Skye</option>
+                                <option value="Sova">Sova</option>
+                                <option value="Viper">Viper</option>
+                                <option value="Yoru">Yoru</option>
+                            </select>
+                            &nbsp;
+                            &nbsp;
+
+                            <input id="agentname1-5" type="text" placeholder="Defender5">
+                        </div>
+
+                        <br>
+
+                    </div>
+
+                    <div class="submit" id="submitbtn">
+                        <button id="submit" type="button">Submit</button>
+                    </div>
+
+                    <div class="submit" id="reloadbtn">
+                        <button id="reload" type="button" onClick="history.go(0)">Refresh</button>
+                    </div>
+                    
+                </div>
+                <div class="col-md-6">
+                    <div class="header-2" id="attackers_name">
+                        <div>
+                            <span id="a_name">Attackers</span>
+                        </div>
+                        <br>
+                        <div id="attackers1">
+                            <input id="attackers" type="text" placeholder="Attackers">
+                        </div>
+                        <br>
+                    </div>
+
+                    <br> 
+
+                    <div class="side-2">
+
+                        <div id="sixth_agent">
+                            <label for="agent2-1">Agent 1:</label>
+                            <select id="agent2-1" name="agent2-1">
+                                <option value="Breach">Breach</option>
+                                <option value="Brimstone">Brimstone</option>
+                                <option value="Cypher">Cypher</option>
+                                <option value="Jett">Jett</option>
+                                <option value="Killjoy">Killjoy</option>
+                                <option value="Omen">Omen</option>
+                                <option value="Phoenix">Phoenix</option>
+                                <option value="Raze">Raze</option>
+                                <option value="Reyna">Reyna</option>
+                                <option value="Sage">Sage</option>
+                                <option value="Skye">Skye</option>
+                                <option value="Sova">Sova</option>
+                                <option value="Viper">Viper</option>
+                                <option value="Yoru">Yoru</option>
+                            </select>
+                            &nbsp;
+                            &nbsp;
+
+                            <input id="agentname2-1" type="text" placeholder="Attackers1">
+                        </div>
+
+                        <br>
+
+                        <div id="seventh_agent">
+                            <label for="agent2-2">Agent 2:</label>
+                            <select id="agent2-2" name="agent2-2">
+                                <option value="Breach">Breach</option>
+                                <option value="Brimstone">Brimstone</option>
+                                <option value="Cypher">Cypher</option>
+                                <option value="Jett">Jett</option>
+                                <option value="Killjoy">Killjoy</option>
+                                <option value="Omen">Omen</option>
+                                <option value="Phoenix">Phoenix</option>
+                                <option value="Raze">Raze</option>
+                                <option value="Reyna">Reyna</option>
+                                <option value="Sage">Sage</option>
+                                <option value="Skye">Skye</option>
+                                <option value="Sova">Sova</option>
+                                <option value="Viper">Viper</option>
+                                <option value="Yoru">Yoru</option>
+                            </select>
+                            &nbsp;
+                            &nbsp;
+
+                            <input id="agentname2-2" type="text" placeholder="Attackers2">
+                        </div>
+
+                        <br>
+
+                        <div id="eighth_agent">
+                            <label for="agent2-3">Agent 3:</label>
+                            <select id="agent2-3" name="agent2-3">
+                                <option value="Breach">Breach</option>
+                                <option value="Brimstone">Brimstone</option>
+                                <option value="Cypher">Cypher</option>
+                                <option value="Jett">Jett</option>
+                                <option value="Killjoy">Killjoy</option>
+                                <option value="Omen">Omen</option>
+                                <option value="Phoenix">Phoenix</option>
+                                <option value="Raze">Raze</option>
+                                <option value="Reyna">Reyna</option>
+                                <option value="Sage">Sage</option>
+                                <option value="Skye">Skye</option>
+                                <option value="Sova">Sova</option>
+                                <option value="Viper">Viper</option>
+                                <option value="Yoru">Yoru</option>
+                            </select>
+                            &nbsp;
+                            &nbsp;
+
+                            <input id="agentname2-3" type="text" placeholder="Attackers3">
+                        </div>
+
+                        <br>
+
+                        <div id="ninth_agent">
+                            <label for="agent2-4">Agent 4:</label>
+                            <select id="agent2-4" name="agent2-4">
+                                <option value="Breach">Breach</option>
+                                <option value="Brimstone">Brimstone</option>
+                                <option value="Cypher">Cypher</option>
+                                <option value="Jett">Jett</option>
+                                <option value="Killjoy">Killjoy</option>
+                                <option value="Omen">Omen</option>
+                                <option value="Phoenix">Phoenix</option>
+                                <option value="Raze">Raze</option>
+                                <option value="Reyna">Reyna</option>
+                                <option value="Sage">Sage</option>
+                                <option value="Skye">Skye</option>
+                                <option value="Sova">Sova</option>
+                                <option value="Viper">Viper</option>
+                                <option value="Yoru">Yoru</option>
+                            </select>
+                            &nbsp;
+                            &nbsp;
+
+                            <input id="agentname2-4" type="text" placeholder="Attackers4">
+                        </div>
+
+                        <br>
+
+                        <div id="tenth_agent">
+                            <label for="agent2-5">Agent 5:</label>
+                            <select id="agent2-5" name="agent2-5">
+                                <option value="Breach">Breach</option>
+                                <option value="Brimstone">Brimstone</option>
+                                <option value="Cypher">Cypher</option>
+                                <option value="Jett">Jett</option>
+                                <option value="Killjoy">Killjoy</option>
+                                <option value="Omen">Omen</option>
+                                <option value="Phoenix">Phoenix</option>
+                                <option value="Raze">Raze</option>
+                                <option value="Reyna">Reyna</option>
+                                <option value="Sage">Sage</option>
+                                <option value="Skye">Skye</option>
+                                <option value="Sova">Sova</option>
+                                <option value="Viper">Viper</option>
+                                <option value="Yoru">Yoru</option>
+                            </select>
+                            &nbsp;
+                            &nbsp;
+
+                            <input id="agentname2-5" type="text" placeholder="Attackers5">
+                        </div>
+
+                        <br>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+
+    </body>
+</html>
