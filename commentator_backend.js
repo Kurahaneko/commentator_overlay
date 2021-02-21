@@ -8,11 +8,11 @@ var agents = {
     "Phoenix": "https://cdn.mobalytics.gg/assets/valorant/images/agents/icons/phoenix.png",
     "Raze": "https://cdn.mobalytics.gg/assets/valorant/images/agents/icons/raze.png",
     "Reyna": "https://cdn.mobalytics.gg/assets/valorant/images/agents/icons/reyna.png",
-    "Sage": "https://static.wikia.nocookie.net/valorant/images/7/74/Sage_icon.png/revision/latest/scale-to-width-down/256?cb=20201128234057",
+    "Sage": "https://titles.trackercdn.com/valorant-api/agents/569fdd95-4d10-43ab-ca70-79becc718b46/displayicon.png",
     "Skye": "https://media.valorant-api.com/agents/6f2a04ca-43e0-be17-7f36-b3908627744d/displayicon.png",
     "Sova": "https://cdn.mobalytics.gg/assets/valorant/images/agents/icons/sova.png",
     "Viper": "https://static.wikia.nocookie.net/valorant/images/5/5f/Viper_icon.png/revision/latest/scale-to-width-down/256?cb=20201128234408",
-    "Yoru": "https://static.wikia.nocookie.net/valorant/images/d/d4/Yoru_icon.png/revision/latest/scale-to-width-down/99?cb=20210112211830",
+    "Yoru": "https://dak.gg/valorant/images/agents/small_portraits/yoru.png?20201008",
 };
 
 var attackers_save = {}
