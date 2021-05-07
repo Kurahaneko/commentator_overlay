@@ -1,6 +1,5 @@
 var agents = {
-    // "Astra": "https://github.com/Kurahaneko/commentator_overlay/blob/main/astra.png?raw=true",
-    "Astra": "https://static.wikia.nocookie.net/valorant/images/0/08/Astra_icon.png/revision/latest/scale-to-width-down/256?cb=20210302164234",
+    "Astra": "https://github.com/Kurahaneko/commentator_overlay/blob/main/astra.png?raw=true",
     "Breach": "https://github.com/Kurahaneko/commentator_overlay/blob/main/breach.jpg?raw=true",
     "Brimstone": "https://github.com/Kurahaneko/commentator_overlay/blob/main/brimstone.png?raw=true",
     "Cypher": "https://github.com/Kurahaneko/commentator_overlay/blob/main/cypher.png?raw=true",
